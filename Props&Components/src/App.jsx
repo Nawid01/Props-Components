@@ -1,12 +1,16 @@
-import "./App.css";
-import Card from "./Components/Card";
-import teamdata from "./Data.js";
+import React from 'react';
+import './App.css';
+import Card from './Components/Card';
+import teamData from '../src/Data.js';
 
 function App() {
   return (
-    <div>
-      {/* passing the "propname"-prop with the "teamdata" to the ChildComponent "Card.jsx "*/}
-      <Card propname={teamdata} />
+    <div className="app">
+      <div className="card-container">
+        {teamData.map((person) => (
+          <Card key={person.id} person={person} />
+        ))}
+      </div>
     </div>
   );
 }

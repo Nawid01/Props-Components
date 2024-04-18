@@ -1,8 +1,8 @@
-const data = [
+ const data = [
   {
     id: 1,
     name: "Nawid",
-    age: 30,
+    age: 18,
     city: "Hamburg",
     phone: "0175/34569723",
     role: "Webdeveloper",
@@ -11,10 +11,11 @@ const data = [
   {
     id: 2,
     name: "Nadja",
-    age: 31,
+    age: 18,
     city: "Regensburg",
     phone: "0175/34569723",
     role: "Webdesigner",
     hobbies: "Painting",
   },
 ];
+export default data;
